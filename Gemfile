@@ -4,13 +4,17 @@ gem 'rails', '3.0.7'
 
 gem 'sqlite3'
 
+gem 'haml'
+
 group :test, :development do
   gem 'rspec-rails', '~> 2.3'
+  gem 'haml-rails'
 end
 
 group :test do
   gem 'cucumber-rails'
   gem 'capybara'
+  gem 'database_cleaner'
 end
 
 # Use unicorn as the web server
