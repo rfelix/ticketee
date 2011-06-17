@@ -1,2 +1,5 @@
 - title @project.name, "Projects"
 %h2= @project.name
+
+%menu
+  = link_to "Edit", edit_project_path(@project)
