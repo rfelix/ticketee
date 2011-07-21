@@ -1,3 +1,5 @@
 %div#ticket
   %h2= @ticket.title
+  %menu
+    = link_to "Edit", [:edit, @project, @ticket]
   = simple_format(@ticket.description)
