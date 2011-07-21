@@ -9,4 +9,5 @@
     - flash.each do |key, value|
       %div{:id => key, :class => 'flash'}
         = value
+    %h1= link_to "Ticketee", root_path
     = yield
